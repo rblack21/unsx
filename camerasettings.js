@@ -1,4 +1,1 @@
-view.hard_camera.fov=21;\
-xyz.view.hard_camera.position[1]=3;\
-xyz.view.hard_camera.target=[0,0,0];\
-xyz.view.hard_camera.position[2]=-2;}
+setInterval(function(){ xyz.view.hard_camera.fov = xyz.view.hard_camera.fov-0.1; }, 100);
