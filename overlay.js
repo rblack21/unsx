@@ -31,16 +31,6 @@ function displayOverlay() {
     `
     styleOverlay();
     overlayDiv.style.display = 'block';
-  } else {
-      overlayDiv.style.display = 'none';
-    }
+  } 
 }
-body.addEventListener('click', event => {
-  if(event.target.className === 'lead-mktg mb-4') {
-       displayBool = !displayBool;
-       displayOverlay();
-  } else if(event.target.id === 'close-btn') {
-      displayBool = !displayBool;
-      displayOverlay();
-    }
-})
+displayOverlay();
